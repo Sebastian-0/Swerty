@@ -1,6 +1,7 @@
 //Swerty by Johan E. Gustafsson, modified by Sebastian Hjelm
 partial alphanumeric_keys
 xkb_symbols "swerty" {
+    include "se(basic)"
 
     name[Group1]="Sweden - Swerty";
 
