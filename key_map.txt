@@ -1,5 +1,5 @@
 //Swerty by Johan E. Gustafsson, modified by Sebastian Hjelm
-partial alphanumeric_keys
+partial alphanumeric_keys modifier_keys
 xkb_symbols "swerty" {
     include "se(basic)"
 
@@ -38,10 +38,10 @@ xkb_symbols "swerty" {
     key <AC03>  { [         d,          D                    ]  };
     key <AC04>  { [         f,          F                    ]  };
     key <AC05>  { [         g,          G                    ]  };
-    key <AC06>  { [         h,          H                    ]  };
-    key <AC07>  { [         j,          J                    ]  };
-    key <AC08>  { [         k,          K                    ]  };
-    key <AC09>  { [         l,          L                    ]  };
+    key <AC06>  { [         h,          H,  Left             ]  };
+    key <AC07>  { [         j,          J,  Down             ]  };
+    key <AC08>  { [         k,          K,  Up               ]  };
+    key <AC09>  { [         l,          L,  Right            ]  };
 //    key <AC10>        { [ odiaeresis,  Odiaeresis,  semicolon,  colon ]  };
 //    key <AC11>        { [ adiaeresis,  Adiaeresis,  apostrophe,  quotedbl ]  };
     key <AC10>  { [ semicolon, colon, odiaeresis,  Odiaeresis ]  };
@@ -59,5 +59,9 @@ xkb_symbols "swerty" {
     key <AB08>  { [     comma,       less                    ]  };
     key <AB09>  { [    period,    greater,  colon            ]  };
     key <AB10>  { [     slash,   question                    ]  };
+
+    key <CAPS> {
+        symbols[Group1] = [ ISO_Level3_Shift ]
+    };
 };
 
